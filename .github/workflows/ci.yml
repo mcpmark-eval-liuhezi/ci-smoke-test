@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from the lint job"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from the build job"
